@@ -1,0 +1,109 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* header */
+header .header_logo {
+  color: #dc4f72;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+header li.nav-item {
+  margin-right: 15px;
+}
+
+header .nav-item .nav-link {
+  color: #2c3038;
+  position: relative;
+}
+
+header .navbar-nav .nav-link.active {
+  color: #dc4f72;
+}
+
+header .nav-link::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  display: block;
+  background-color: #dc4f72;
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  transition: all 0.5s;
+}
+
+header .nav-item a.nav-link:hover {
+  color: #dc4f72;
+}
+
+header .nav-item .nav-link:hover span {
+  color: #2c3038;
+}
+
+header .nav-item .nav-link:hover::before {
+  width: 30%;
+}
+
+header .dropdown-toggle::after {
+  content: "\f078";
+  vertical-align: 0.1em;
+  border: none;
+  font: 10px/1 FontAwesome;
+  color: #2c3038;
+}
+
+header a.show.dropdown-toggle::after {
+  color: #dc4f72;
+}
+
+header .dropdown-menu {
+  transform: translateX(-40px);
+  border: 1px solid rgb(230, 229, 229);
+  box-shadow: 2px 5px 5px 2px rgba(128, 128, 128, 0.219);
+  position: relative;
+}
+
+header .dropdown-menu::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgb(230, 229, 229);
+  border-right: 1px solid rgb(230, 229, 229);
+  border-left: none;
+  border-bottom: none;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 70px;
+  transform: rotate(-45deg);
+}
+
+header .dropdown-menu .dropdown-item {
+  position: relative;
+  color: #2c3038;
+}
+
+header .dropdown-menu .dropdown-item:hover {
+  color: #dc4f72;
+  background-color: transparent;
+}
+
+header .dropdown-menu .dropdown-item::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  display: block;
+  background-color: #dc4f72;
+  position: absolute;
+  left: 16px;
+  bottom: 4px;
+  transition: all 0.5s;
+}
+
+header .dropdown-menu .dropdown-item:hover::before {
+  width: 15%;
+}
