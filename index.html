@@ -89,16 +89,84 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
+                <button
+                  type="button"
+                  class="header_search_ico"
+                  data-bs-toggle="modal"
+                  data-bs-target="#search_modal"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="btn btn-outline-primary theme_button ms-3">
+                  SCHEDULE A DEMO
+                </button>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <main></main>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner_content">
+          <div class="row align-items-center">
+            <div class="banner_left col-lg-6">
+              <h1 class="title">
+                We Execute Our Ideas<br />
+                From Start to Finish
+              </h1>
+              <p class="description">
+                Building a beautiful interactive business for<br />
+                startups and innovative companies.
+              </p>
+              <button class="btn btn-outline-primary theme_button mt-lg-3">
+                GET STARTED
+              </button>
+            </div>
+            <div class="banner_right col-lg-6">
+              <img src="./img/main.png" alt="Main" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <!-- place footer here -->
     </footer>
+    <!-- Search modal -->
+    <div
+      class="modal fade"
+      id="search_modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control modal_search"
+                type="search"
+                placeholder="Enter Keyword"
+                aria-label="Search"
+              />
+              <button class="btn btn_Search" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

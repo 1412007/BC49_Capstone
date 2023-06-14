@@ -2,7 +2,36 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+/* theme_button */
+button.theme_button {
+  color: #dc4f72;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 30px;
+  border: 1px solid #dc4f72;
+  transition: all 0.5s;
+}
+
+button.btn.theme_button:hover {
+  border: 1px solid #dc4f72;
+  opacity: 1;
+}
+
+button.btn.theme_button:focus {
+  box-shadow: 0 0 0 0.2em rgba(220, 79, 114, 0.5);
+}
+
 /* header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+header .header_content {
+  height: 80px;
+}
+
 header .header_logo {
   color: #dc4f72;
   text-decoration: none;
@@ -106,4 +135,100 @@ header .dropdown-menu .dropdown-item::before {
 
 header .dropdown-menu .dropdown-item:hover::before {
   width: 15%;
+}
+
+header .header_search_ico {
+  color: #5a5a5a;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid rgb(230, 229, 229);
+  background-color: #f7f9fc;
+  opacity: 0.7;
+}
+
+header .header_search_ico:hover {
+  color: #2c3038;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.btn-close {
+  opacity: 0.75;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+.modal_search {
+  padding: 15px;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn_Search {
+  background-color: #dc4f72;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 30px;
+  transition: all 0.5s;
+}
+
+.btn:first-child:hover,
+:not(.btn-check) + .btn:hover {
+  color: white;
+  background-color: #dc4f72;
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    --bs-modal-width: 600px;
+  }
+}
+
+/* banner */
+.banner {
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
+    url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 80px;
+}
+
+.banner .banner_content {
+  padding-top: 60px;
+}
+
+.banner .banner_left .title {
+  font-weight: bold;
+  color: #2c3038;
+  font-size: 50px;
+}
+
+.banner .banner_left .description {
+  color: #5a5a5a;
+  font-size: 18px;
 }
