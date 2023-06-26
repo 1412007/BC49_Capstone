@@ -34,6 +34,16 @@
       rel="stylesheet"
     />
 
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="./owlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -332,9 +342,114 @@
       </div>
     </section>
 
+    <section class="clients">
+      <div class="container">
+        <div class="clients_content">
+          <div class="clients_title mb-3">
+            <p class="sub_title">OUR CLIENTS TESTIMONIALS</p>
+            <h2 class="title">What People Say</h2>
+            <p class="description">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
+          <div class="clients_carousel">
+            <div class="owl-carousel owl-theme">
+              <div class="carousel_item me-3">
+                <div class="carousel_content pt-4 ps-4 pe-4 bg-white">
+                  <div class="carousel_img">
+                    <img src="./img/team3.jpg" alt="team-3" />
+                  </div>
+                  <div class="carousel_description ps-lg-2">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Assumenda corporis deleniti praesentium doloremque.
+                      Repellendus soluta quos nemo quisquam consectetur
+                      temporibus quam obcaecati sapiente quaerat et.
+                    </p>
+                    <div class="carousel_name mt-4">
+                      <h4>Isabella Mia</h4>
+                      <p>Company name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_item ms-3">
+                <div class="carousel_content pt-4 ps-4 pe-4 bg-white">
+                  <div class="carousel_img">
+                    <img src="./img/team4.jpg" alt="team-3" />
+                  </div>
+                  <div class="carousel_description ps-lg-2">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Assumenda corporis deleniti praesentium doloremque.
+                      Repellendus soluta quos nemo quisquam consectetur
+                      temporibus quam obcaecati sapiente quaerat et.
+                    </p>
+                    <div class="carousel_name mt-4">
+                      <h4>Benjamin Lucas</h4>
+                      <p>Company name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_item me-3">
+                <div class="carousel_content pt-4 ps-4 pe-4 bg-white">
+                  <div class="carousel_img">
+                    <img src="./img/team5.jpg" alt="team-3" />
+                  </div>
+                  <div class="carousel_description ps-lg-2">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Assumenda corporis deleniti praesentium doloremque.
+                      Repellendus soluta quos nemo quisquam consectetur
+                      temporibus quam obcaecati sapiente quaerat et.
+                    </p>
+                    <div class="carousel_name mt-4">
+                      <h4>Oliver Bradley</h4>
+                      <p>Company name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_item ms-3">
+                <div class="carousel_content pt-4 ps-4 pe-4 bg-white">
+                  <div class="carousel_img">
+                    <img src="./img/team6.jpg" alt="team-3" />
+                  </div>
+                  <div class="carousel_description ps-lg-2">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Assumenda corporis deleniti praesentium doloremque.
+                      Repellendus soluta quos nemo quisquam consectetur
+                      temporibus quam obcaecati sapiente quaerat et.
+                    </p>
+                    <div class="carousel_name mt-4">
+                      <h4>Oliver Bradley</h4>
+                      <p>Company name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <!-- place footer here -->
     </footer>
+
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa-solid fa-chevron-up"></i
+    ></a>
+
     <!-- Search modal -->
     <div
       class="modal fade"
@@ -379,5 +494,26 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl Carousel -->
+    <script src="./owlCarousel/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          dots: true,
+          loop: true,
+          items: 2,
+        });
+      });
+    </script>
+    <!-- Back to top -->
+    <script src="./js/backToTop/main.js"></script>
+    <script src="./js/backToTop/util.js"></script>
   </body>
 </html>
