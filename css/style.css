@@ -1,5 +1,7 @@
 body {
   font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 /* theme_button */
@@ -26,7 +28,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -204,7 +206,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   box-shadow: none;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 576px) {
   header button.theme_button {
     display: block;
     margin-left: 0;
@@ -358,6 +360,7 @@ header .btn_Toggle_Menu .toggle_collapse {
 .blog .blog_content {
   color: white;
   padding: 70px 0;
+  max-width: 600px;
 }
 
 .blog .blog_content .title {
@@ -376,6 +379,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   border: 1px solid #f8f9fa;
   font-weight: bold;
   transition: all 0.5s;
+  max-width: 160px;
 }
 
 .blog .blog_content button:hover {
@@ -385,19 +389,7 @@ header .btn_Toggle_Menu .toggle_collapse {
 
 /* faqs */
 .faqs .faqs_content {
-  padding: 100px 0;
-  height: 920px;
-  overflow-y: scroll;
-}
-
-.faqs .faqs_content::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.faqs .faqs_content {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  height: fit-content;
 }
 
 .faqs .faqs_title {
@@ -431,7 +423,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   object-fit: fill;
   border-radius: 5px;
   position: sticky;
-  top: -65px;
+  top: 80px;
   transition: all 0.5s;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -472,6 +464,28 @@ header .btn_Toggle_Menu .toggle_collapse {
   padding-left: var(--bs-accordion-body-padding-x);
   padding-right: var(--bs-accordion-body-padding-x);
   padding-bottom: var(--bs-accordion-body-padding-y);
+}
+
+@media (max-width: 576px) {
+  .faqs .faqs_content {
+    padding: 50px 0;
+  }
+  .faqs .faqs_question .faqs_question_left img {
+    margin: 20px 0;
+  }
+  .faqs .accordion .accordion-item {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .faqs .faqs_content {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 992px) {
+  .faqs .faqs_content {
+    padding: 100px 0;
+  }
 }
 
 /* clients */
@@ -578,11 +592,29 @@ header .btn_Toggle_Menu .toggle_collapse {
   background-color: #dc4f72;
 }
 
+@media (max-width: 576px) {
+  .clients .container {
+    min-width: 100%;
+  }
+  .clients .carousel_item .carousel_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px 0 24px;
+    gap: 20px;
+  }
+  .clients .carousel_item .carousel_description {
+    text-align: center;
+  }
+  .clients .carousel_item .carousel_description i {
+    position: static;
+  }
+}
+
 /* back to top */
 .backToTop {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -593,6 +625,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
+  z-index: 5;
 }
 
 .backToTop:hover {
@@ -603,4 +636,25 @@ header .btn_Toggle_Menu .toggle_collapse {
 .cd-top--is-visible {
   opacity: 0.7;
   visibility: visible;
+}
+
+@media (max-width: 576px) {
+  .backToTop {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .backToTop {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .backToTop {
+    bottom: 10px;
+    right: 10px;
+  }
 }
