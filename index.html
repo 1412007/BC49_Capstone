@@ -51,86 +51,86 @@
   <body id="myBody">
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a href="#" class="header_logo">
-              <i class="fa-regular fa-handshake"></i>
-              Masterwork
-            </a>
-            <button
-              class="navbar-toggler btn_Toggle_Menu"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="fa-solid fa-bars toggle_expand"></span>
-              <span class="fa-solid fa-xmark toggle_collapse"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse text-center"
-              id="navbarTogglerDemo02"
-            >
-              <ul class="navbar-nav ms-auto mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Landing page</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">404 page</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+        <div class="header_content">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a href="#" class="header_logo">
+                <i class="fa-regular fa-handshake"></i>
+                Masterwork
+              </a>
               <button
+                class="navbar-toggler btn_Toggle_Menu"
                 type="button"
-                class="header_search_ico"
-                data-bs-toggle="modal"
-                data-bs-target="#search_modal"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="fa-solid fa-bars toggle_expand"></span>
+                <span class="fa-solid fa-xmark toggle_collapse"></span>
               </button>
-              <button class="btn btn-outline-primary theme_button ms-lg-3">
-                SCHEDULE A DEMO
-              </button>
-
-              <!-- <div style="width: 18rem;" class="mx-auto py-3">
-              <button class="btn" id="switchButton" title="Click to switch theme">
-                <i class="far fa-moon"></i>
-                <i class="far fa-sun"></i>
-              </button>
-        
-            </div> -->
+              <div
+                class="collapse navbar-collapse text-center"
+                id="navbarTogglerDemo02"
+              >
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Landing page</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">404 page</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="header_search_ico"
+                  data-bs-toggle="modal"
+                  data-bs-target="#search_modal"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="btn btn-outline-primary theme_button ms-lg-3">
+                  SCHEDULE A DEMO
+                </button>
+              </div>
             </div>
+          </nav>
+          <div class="py-3">
+            <a class="btn" id="switchButton" title="Click to switch theme">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </a>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -229,7 +229,7 @@
             <h3 class="mb-md-4 mb-3" id="titleAbout">
               The Best Choice For Your Successful Business!
             </h3>
-            <p class="mb-md-5 mb-4">
+            <p class="mb-md-5 mb-4 description">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
               repellendus illum harum quam nihil totam reprehenderit! Ut sed
               eveniet quos! Asperiores officia, repudiandae similique
@@ -297,7 +297,7 @@
       </div>
     </section>
 
-    <section class="faqs bg-light">
+    <section class="faqs">
       <div class="container">
         <div class="faqs_content">
           <div class="faqs_title">
@@ -545,10 +545,7 @@
                 >
                   <div class="row pt-5">
                     <div class="col-md-6">
-                      <h3
-                        class="ps-0 fs-3 lh-sm fw-bold"
-                        style="color: #2c3038"
-                      >
+                      <h3 class="ps-0 fs-3 lh-sm fw-bold">
                         Why a visual identity system is more memorable
                       </h3>
                       <p>
@@ -590,10 +587,7 @@
                       />
                     </div>
                     <div class="col-md-6 mt-md-0 mt-5">
-                      <h3
-                        class="ps-0 fs-3 lh-sm fw-bold"
-                        style="color: #2c3038"
-                      >
+                      <h3 class="ps-0 fs-3 lh-sm fw-bold">
                         Make website that looks Lorem, ipsum dolor.
                       </h3>
                       <p>
@@ -621,10 +615,7 @@
                 >
                   <div class="row pt-5">
                     <div class="col-md-6">
-                      <h3
-                        class="ps-0 fs-3 lh-sm fw-bold"
-                        style="color: #2c3038"
-                      >
+                      <h3 class="ps-0 fs-3 lh-sm fw-bold">
                         Why a visual identity system is more memorable
                       </h3>
                       <p>
@@ -672,7 +663,7 @@
           <div class="clients_carousel">
             <div class="owl-carousel owl-theme">
               <div class="carousel_item me-sm-3">
-                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4 bg-white">
+                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4">
                   <div class="carousel_img">
                     <img src="./img/team3.jpg" alt="team-3" />
                   </div>
@@ -692,7 +683,7 @@
                 </div>
               </div>
               <div class="carousel_item ms-sm-3">
-                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4 bg-white">
+                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4">
                   <div class="carousel_img">
                     <img src="./img/team4.jpg" alt="team-3" />
                   </div>
@@ -712,7 +703,7 @@
                 </div>
               </div>
               <div class="carousel_item me-sm-3">
-                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4 bg-white">
+                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4">
                   <div class="carousel_img">
                     <img src="./img/team5.jpg" alt="team-3" />
                   </div>
@@ -732,7 +723,7 @@
                 </div>
               </div>
               <div class="carousel_item ms-sm-3">
-                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4 bg-white">
+                <div class="carousel_content pt-sm-4 ps-sm-4 pe-sm-4">
                   <div class="carousel_img">
                     <img src="./img/team6.jpg" alt="team-3" />
                   </div>
