@@ -700,6 +700,11 @@ header .btn_Toggle_Menu .toggle_collapse {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.creative .videoContent .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
 .creative .videoContent div.modal.fade > .modal-dialog {
   transform: scale(0);
   opacity: 0;
@@ -735,7 +740,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   background-color: #d62f58;
 }
 
-.creative .modal-content {
+.creative .creativeRequest .modal-content {
   background-color: var(--bg-color);
 }
 
@@ -743,7 +748,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   border-bottom: none;
 }
 
-.creative .modal-content .modal-header button {
+.creative .creativeRequest .modal-content .modal-header button {
   border: none;
   background-color: transparent;
   color: var(--title-color);
@@ -751,24 +756,24 @@ header .btn_Toggle_Menu .toggle_collapse {
   opacity: 0.7;
 }
 
-.creative .modal-content .modal-header button:hover {
+.creative .creativeRequest .modal-content .modal-header button:hover {
   opacity: 1;
 }
 
-.creative h1.modal-title {
+.creative .creativeRequest h1.modal-title {
   color: var(--title-color);
   font-weight: bold;
   font-size: 30px;
 }
 
-.creative .modal-body input {
+.creative .creativeRequest .modal-body input {
   padding: 15px 20px;
   background-color: var(--light-bg-color);
   border: 1px solid var(--border-color);
   color: var(--text-color);
 }
 
-.creative .modal-body input:focus {
+.creative .creativeRequest .modal-body input:focus {
   border: 1px solid var(--primary);
   box-shadow: none;
 }
