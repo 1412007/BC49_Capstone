@@ -34,6 +34,16 @@
       rel="stylesheet"
     />
 
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="./owlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/aboutStyle.css" />
   </head>
@@ -44,7 +54,7 @@
         <div class="header_content">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a href="#" class="header_logo">
+              <a href="./index.html" class="header_logo">
                 <i class="fa-regular fa-handshake"></i>
                 Masterwork
               </a>
@@ -66,13 +76,15 @@
               >
                 <ul class="navbar-nav ms-auto mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="./index.html"
+                      >Home</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link active" href="./about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="./service.html">Services</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -274,7 +286,7 @@
           </div>
           <div class="creativeVideo">
             <div class="videoContent mt-4 row">
-              <img src="./img/b9.jpg" alt="b9" />
+              <img src="./img/b9.jpg" alt="b9" class="col-lg-6" />
               <a
                 id="playBtn"
                 data-bs-toggle="modal"
@@ -282,26 +294,26 @@
                 ><i class="fa-solid fa-play"></i
               ></a>
               <div
-                class="modal"
+                class="modal fade"
                 id="exampleModal"
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
               >
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button
                         type="button"
-                        class="btn-close"
+                        class="btn-close btn-close-white"
                         data-bs-dismiss="modal"
                         aria-label="Close"
                       ></button>
                     </div>
                     <div class="modal-body">
                       <iframe
-                        width="560"
-                        height="315"
+                        width="700"
+                        height="400"
                         src="https://www.youtube.com/embed/lTxn2BuqyzU"
                         title="YouTube video player"
                         frameborder="0"
@@ -311,6 +323,226 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="creativeRequest text-center">
+            <button
+              class="btn btnRequest theme_button mt-5"
+              data-bs-toggle="modal"
+              data-bs-target="#requestModal"
+            >
+              REQUEST A QUOTE
+            </button>
+            <div
+              class="modal fade"
+              id="requestModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">
+                      Get Free Quote
+                    </h1>
+                    <button
+                      type="button"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="mt-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          id="name"
+                          required
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          required
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="company"
+                          id="company"
+                          required
+                          placeholder="Company"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="subject"
+                          id="subject"
+                          required
+                          placeholder="Subject"
+                        />
+                      </div>
+                      <div class="col-12 text-end">
+                        <button class="btn theme_button" type="submit">
+                          SUBMIT NOW
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="creativeCarousel mt-5">
+            <div class="owl-carousel owl-theme">
+              <div class="creativeCarouselItem">
+                <img src="./img/logo1.jpg" alt="logo1" />
+              </div>
+              <div class="creativeCarouselItem">
+                <img src="./img/logo2.jpg" alt="logo2" />
+              </div>
+              <div class="creativeCarouselItem">
+                <img src="./img/logo3.jpg" alt="logo3" />
+              </div>
+              <div class="creativeCarouselItem">
+                <img src="./img/logo4.jpg" alt="logo4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourTeams">
+      <div class="container">
+        <div class="ourTeamsContent">
+          <div class="ourTeamTitle">
+            <p class="subtitle">OUR TEAM MEMBERS</p>
+            <h2 class="title">Our Creative Team</h2>
+            <p class="description">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
+          <div class="ourTeamsBottom d-grid mt-5">
+            <div class="ourTeamsItem">
+              <img src="./img/team1.jpg" alt="team1" />
+              <h3 class="ps-3 pt-3"><a href="#">Gwen Johnson</a></h3>
+              <p class="ps-3">Founder & CEO</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team2.jpg" alt="team2" />
+              <h3 class="ps-3 pt-3"><a href="#">Daniel Robert</a></h3>
+              <p class="ps-3">Regional Manager</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team3.jpg" alt="team3" />
+              <h3 class="ps-3 pt-3"><a href="#">Dhony Abraham</a></h3>
+              <p class="ps-3">Managing Partner</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team4.jpg" alt="team4" />
+              <h3 class="ps-3 pt-3"><a href="#">Marko Dugonji</a></h3>
+              <p class="ps-3">Cheif Executive</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team5.jpg" alt="team5" />
+              <h3 class="ps-3 pt-3"><a href="#">Anthony</a></h3>
+              <p class="ps-3">Engineering Officer</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team6.jpg" alt="team6" />
+              <h3 class="ps-3 pt-3"><a href="#">Emma Stone</a></h3>
+              <p class="ps-3">Team Leader</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team7.jpg" alt="team7" />
+              <h3 class="ps-3 pt-3"><a href="#">Rhoda Byrd</a></h3>
+              <p class="ps-3">Technology Officer</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <div class="ourTeamsItem">
+              <img src="./img/team8.jpg" alt="team8" />
+              <h3 class="ps-3 pt-3"><a href="#">Max Stoiber</a></h3>
+              <p class="ps-3">Manager</p>
+              <div class="teamSocialIcon ps-3">
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -464,7 +696,7 @@
 
     <!-- Search modal -->
     <div
-      class="modal fade"
+      class="modal fade modalSearch"
       id="search_modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -507,6 +739,42 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl Carousel -->
+    <script src="./owlCarousel/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          autoplaySpeed: 1000,
+          loop: true,
+          margin: 0,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            375: {
+              dots: false,
+              items: 1,
+            },
+            768: {
+              dots: false,
+              items: 2,
+            },
+            992: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
     <!-- Back to top -->
     <script src="./js/backToTop/main.js"></script>
     <script src="./js/backToTop/util.js"></script>

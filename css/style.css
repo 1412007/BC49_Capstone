@@ -234,40 +234,40 @@ header .btn_Toggle_Menu .toggle_collapse {
   color: var(--bg-color);
 }
 
-.modal-content {
+.modalSearch .modal-content {
   background-color: transparent;
   border: none;
 }
 
-.modal-header {
+.modalSearch .modal-header {
   border-bottom: none;
 }
 
-.btn-close {
+.modalSearch .btn-close {
   opacity: 0.75;
 }
 
-.btn-close:hover {
+.modalSearch .btn-close:hover {
   opacity: 1;
 }
 
-.modal_search {
+.modalSearch .modal_search {
   width: 100%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.modal-body input {
+.modalSearch .modal-body input {
   color: var(--text-color);
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
 }
 
-.modal-body .form-control:focus {
+.modalSearch .modal-body .form-control:focus {
   background-color: var(--bg-color);
 }
 
-.btn_Search {
+.modalSearch .btn_Search {
   background-color: var(--primary);
   color: #fff;
   border-top-left-radius: 0;
@@ -284,7 +284,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   opacity: 0.8;
 }
 
-.form-control:focus {
+.modalSearch .form-control:focus {
   border-color: transparent;
   box-shadow: none;
 }
@@ -298,7 +298,7 @@ header .btn_Toggle_Menu .toggle_collapse {
     margin-left: auto;
     margin-right: auto;
   }
-  .btn_Search {
+  .modalSearch .btn_Search {
     padding: 0 20px;
   }
   header .nav-item .nav-link:hover::before {
@@ -317,7 +317,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   header .btn_Toggle_Menu .toggle_collapse {
     font-size: 20px;
   }
-  .modal_search {
+  .modalSearch .modal_search {
     padding: 10px;
   }
 }
@@ -331,7 +331,7 @@ header .btn_Toggle_Menu .toggle_collapse {
     margin-left: auto;
     margin-right: auto;
   }
-  .btn_Search {
+  .modalSearch .btn_Search {
     padding: 0 30px;
   }
   header .nav-item .nav-link:hover::before {
@@ -350,7 +350,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   header .btn_Toggle_Menu .toggle_collapse {
     font-size: 24px;
   }
-  .modal_search {
+  .modalSearch .modal_search {
     padding: 15px;
   }
 }
@@ -1171,14 +1171,11 @@ header .btn_Toggle_Menu .toggle_collapse {
 
 .buttons .ml-2 {
   margin-left: 8px;
-}
-
-.buttons .ml-2 {
   background-color: var(--primary);
   color: #fff;
 }
 
-.buttons:hover {
+.ready .buttons a:hover {
   opacity: 1;
 }
 
