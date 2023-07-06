@@ -35,7 +35,7 @@
     />
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="./css/serviceStyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body id="myBody">
@@ -91,7 +91,9 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Blog Posts</a></li>
                       <li>
-                        <a class="dropdown-item" href="#">Landing page</a>
+                        <a class="dropdown-item" href="./landingPage.html"
+                          >Landing page</a
+                        >
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">404 page</a>
@@ -222,6 +224,75 @@
               posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
               turpis sodales quis. Integer sit amet mattis quam.
             </p>
+          </div>
+          <div class="productList row mt-5">
+            <div class="productItem col-sm-4">
+              <div class="productSublist d-flex mt-3">
+                <div class="productNumber">1</div>
+                <div class="productDescription">
+                  <a href="#"><h4>FULL SECURITY</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="productSublist d-flex mt-3">
+                <p class="productNumber">2</p>
+                <div class="productDescription">
+                  <a href="#"><h4>BEST PERFORMANCE</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="productSublist d-flex mt-3">
+                <p class="productNumber">3</p>
+                <div class="productDescription">
+                  <a href="#"><h4>CONCEPT & STRATEGY</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="productItem col-sm-4 text-center">
+              <img src="./img/service-circle.jpg" alt="service-circle" />
+            </div>
+            <div class="productItem col-sm-4">
+              <div class="productSublist d-flex mt-3">
+                <p class="productNumber">4</p>
+                <div class="productDescription">
+                  <a href="#"><h4>WORLDWIDE ACCESS</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="productSublist d-flex mt-3">
+                <p class="productNumber">5</p>
+                <div class="productDescription">
+                  <a href="#"><h4>INTERACTIVE BUSINESS</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="productSublist d-flex mt-3">
+                <p class="productNumber">6</p>
+                <div class="productDescription">
+                  <a href="#"><h4>EMAILING</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi
+                    optio consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -468,5 +539,10 @@
     <script src="./js/backToTop/util.js"></script>
     <!-- Javascript -->
     <script src="./index.js"></script>
+    <script>
+      $(document).ready(function () {
+        body.classList.add(localStorage.getItem("theme"));
+      });
+    </script>
   </body>
 </html>
