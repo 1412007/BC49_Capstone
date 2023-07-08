@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact page - MasterWork</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+
+  <body id="myBody">
+    <header>
+      <div class="container">
+        <div class="header_content">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a href="../home/index.html" class="header_logo">
+                <i class="fa-regular fa-handshake"></i>
+                Masterwork
+              </a>
+              <button
+                class="navbar-toggler btn_Toggle_Menu"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="fa-solid fa-bars toggle_expand"></span>
+                <span class="fa-solid fa-xmark toggle_collapse"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse text-center"
+                id="navbarTogglerDemo02"
+              >
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="../home/index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../about/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../services/service.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/blogPosts/mainPosts/blog.html"
+                          >Blog Posts</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/landingPage/landingPage.html"
+                          >Landing page</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/page404/page404.html"
+                          >404 page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      href="../contact/contactPage.html"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="header_search_ico"
+                  data-bs-toggle="modal"
+                  data-bs-target="#search_modal"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="btn btn-outline-primary theme_button ms-lg-3">
+                  SCHEDULE A DEMO
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div class="py-3">
+            <a class="btn" id="switchButton" title="Click to switch theme">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="../home/index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Contact page
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="contactUs">
+      <div class="container">
+        <div class="contactTitle text-center py-5">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-6 text-center">
+            <img
+              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/contact.jpg"
+              class="img-curve img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-6">
+            <div class="contact-form">
+              <div class="header-section mb-4 text-left">
+                <h3>Drop us a Message</h3>
+                <p class="mt-2 mb-3">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices turpis sodales quis. Integer sit amet mattis quam.
+                </p>
+              </div>
+
+              <form action="" method="post" class="">
+                <div class="main-input">
+                  <input
+                    type="text"
+                    name="w3lName"
+                    placeholder="Enter your name"
+                    class="contact-input"
+                    required=""
+                  />
+
+                  <input
+                    type="email"
+                    name="w3lSender"
+                    placeholder="Enter your mail"
+                    class="contact-input"
+                    required=""
+                  />
+
+                  <input
+                    type="text"
+                    name="w3lSubject"
+                    placeholder="Subject"
+                    class="contact-input"
+                  />
+
+                  <textarea
+                    class="contact-textarea contact-input"
+                    name="w3lMessage"
+                    placeholder="Enter your message"
+                    required=""
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="text-right">
+                  <button class="btn-primary btn theme-button">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="getInTouch py-5">
+      <div class="container">
+        <div class="getInTitle text-center py-5">
+          <h6>Get In Touch</h6>
+          <h3>We're here to help</h3>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />
+            dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet
+            mattis quam.
+          </p>
+        </div>
+        <div class="row bottom_grids text-center justify-content-center">
+          <div class="col-lg-4">
+            <div href="#" class="d-block">
+              <div class="icon">
+                <span><i class="fa-solid fa-location-arrow"></i></span>
+              </div>
+              <h3 class="my-3">Our head office address:</h3>
+              <p>
+                8th-block road, cross avenue, Lorem dolor sit, New York, USA
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div href="#" class="d-block">
+              <div class="icon">
+                <span><i class="fa-solid fa-phone"></i></span>
+              </div>
+              <h3 class="my-3">Call for help:</h3>
+              <p><a href="tel:+04012345688">+040-123-456-88</a></p>
+              <p><a href="tel:+04012345689">+040-123-456-89</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div href="#" class="d-block">
+              <div class="icon">
+                <span><i class="fa-regular fa-envelope-open"></i></span>
+              </div>
+              <h3 class="my-3">Mail Us for information:</h3>
+              <p>
+                <a href="mailto:info@masterwork.com">info@masterwork.com</a>
+              </p>
+              <p>
+                <a href="mailto:masterwork@support.com"
+                  >masterwork@support.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container text-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001161.424489281!2d-78.01909140705047!3d42.72866436845163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1570786994395!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          frameborder="0"
+          style="border: 0px"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 column">
+            <div class="row">
+              <div class="col-md-4 column">
+                <div id="meta" class="widget_meta">
+                  <h3 class="">Meta</h3>
+                  <ul>
+                    <li>
+                      <a href="https://wp.w3layouts.com/masterwork/wp-login.php"
+                        >Log in</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://wp.w3layouts.com/masterwork/feed/"
+                        >Entries feed</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://wp.w3layouts.com/masterwork/comments/feed/"
+                        >Comments feed</a
+                      >
+                    </li>
+
+                    <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 column mt-md-0 mt-4">
+                <div id="categories" class="widget_categories">
+                  <h3 class="">Categories</h3>
+                  <ul>
+                    <li class="cat-item cat-item-2">
+                      <a
+                        href="../pages/blogPosts/categories/business/business.html"
+                        >Business</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-3">
+                      <a href="../pages/blogPosts/categories/design/design.html"
+                        >Design</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-4">
+                      <a
+                        href="../pages/blogPosts/categories/industry/industry.html"
+                        >Industry</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-5">
+                      <a
+                        href="../pages/blogPosts/categories/programming/programming.html"
+                        >Programming</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 column mt-md-0 mt-4">
+                <div id="archives" class="widget_archive">
+                  <h3 class="">Archives</h3>
+                  <ul>
+                    <li>
+                      <a href="../pages/blogPosts/subPosts/index.html"
+                        >March 2021</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5 FooterNewsletter"
+          >
+            <h3>Newsletter</h3>
+            <div class="end-column">
+              <h4>Get latest updates and offers.</h4>
+              <form action="" class="subscribe" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required=""
+                />
+                <button type="submit">Go</button>
+              </form>
+              <p>
+                Sign up for our latest news & articles. We won't give you spam
+                mails.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex below-section justify-content-between align-items-center pt-4 mt-5"
+        >
+          <div class="columns text-center">
+            <p class="CopyRights">
+              © 2023 Masterwork. All Rights Reserved | WordPress Theme by
+              <a href="https://w3layouts.com/">W3Layouts. </a>
+            </p>
+          </div>
+
+          <div class="columns-2 mt-lg-0 mt-3 FooterSocial">
+            <ul class="social d-flex justify-content-between">
+              <li>
+                <a href="https://www.facebook.com/">
+                  <i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.google.com/">
+                  <i class="fa-brands fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa-solid fa-chevron-up"></i
+    ></a>
+
+    <!-- Search modal -->
+    <div
+      class="modal fade modalSearch"
+      id="search_modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control modal_search"
+                type="search"
+                placeholder="Enter Keyword"
+                name="s"
+                required
+              />
+              <button class="btn btn_Search" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Back to top -->
+    <script src="../../js/backToTop/main.js"></script>
+    <script src="../../js/backToTop/util.js"></script>
+    <!-- Javascript -->
+    <script src="./../../js/index.js"></script>
+  </body>
+</html>

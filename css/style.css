@@ -2085,6 +2085,10 @@ header .btn_Toggle_Menu .toggle_collapse {
   text-decoration: none;
 }
 
+.news .row .grids5-info .blog-info a:hover {
+  color: var(--primary);
+}
+
 .news .row .grids5-info .blog-info h4 a {
   font-size: 22px;
   line-height: 27px;
@@ -2205,7 +2209,7 @@ header .btn_Toggle_Menu .toggle_collapse {
   font-weight: 500;
 }
 
-.content404 .error .error-block .form-inline button {
+.content404 .error .error-block .form-inline button.search {
   color: #fff;
   background: var(--primary);
   font-size: 16px;
@@ -2220,8 +2224,18 @@ header .btn_Toggle_Menu .toggle_collapse {
   transition: all 0.3s;
 }
 
-.content404 .error .error-block .form-inline button:hover {
+.content404 .error .error-block .form-inline button.search:hover {
   opacity: 0.8;
+}
+
+.content404 .error .error-block a:hover {
+  background-color: transparent;
+  color: var(--primary);
+  opacity: 1;
+}
+
+.content404 .error .error-block a:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.25);
 }
 
 .content404 .error .error-block a span {
